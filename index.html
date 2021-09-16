@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Inplace-CRN for End-to-end Acoustic Echo Cancellation</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/github-light.css">
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Audio Samples from "A Complex Spectral Mapping with Inplace Convolution Recurrent Neural Networks for Acoustic Echo Cancellation"</h1>
+        </header>
+    </article>
+
+    <div><b>Authors:</b> Chenggang Zhang, Jinjiang Liu and Xueliang Zhang
+    </div>
+
+    <hr style="height:1px;border:none;border-top:1px solid #555555; width:100%">
+<!--     <h2>Part1: Blind test by Interspeech AEC-challenge 2021</h2>	
+    <hr style="height:1px;border:none;border-top:1px solid #555555; width:100%"> -->
+    <h2> Near-end is music signal, far-end is speech signal scenario</h2>
+    <table class="tg" style="undefined;table-layout: fixed; width: 493px">
+        <colgroup>
+            <col style="width: 150px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">			
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="tg-c3ow">Model</th>
+                <th class="tg-c3ow">Sample 1</th>
+                <th class="tg-c3ow">Sample 2</th>
+                <th class="tg-c3ow">Sample 3</th>
+                <th class="tg-c3ow">Sample 4</th>				
+            </tr>
+        </thead>
+        <tbody>
+		    <tr>
+                <td class="tg-pcvp">Far-end signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/far-end/music-fma-0030-n-SER-0_far.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/far-end/music-fma-0035-n-SER-0_far.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/far-end/music-fma-0053-n-SER-0_far.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/far-end/music-jamendo-0002-n-SER-0_far.wav">
+                    </audio></td>                
+            </tr>
+            <tr>
+                <td class="tg-pcvp">Microphone signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0030-n-SER-0_mix.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0035-n-SER-0_mix.wav">
+                    </audio></td>                
+				<td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-fma-0053-n-SER-0_mix.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/microphone/music-jamendo-0002-n-SER-0_mix.wav">
+                    </audio></td>                
+            </tr>
+			<tr>
+                <td class="tg-pcvp">Near-end signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/near-end/music-fma-0030-n-SER-0_ideal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/near-end/music-fma-0035-n-SER-0_ideal.wav">
+                    </audio></td>    
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/near-end/music-fma-0053-n-SER-0_ideal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/near-end/music-jamendo-0002-n-SER-0_ideal.wav">
+                    </audio></td>    					
+            </tr>
+			<tr>
+                <td class="tg-pcvp">WebRTC-AEC3</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/AEC3/music-fma-0030-n-SER-0_est.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/AEC3/music-fma-0035-n-SER-0_est.wav">
+                    </audio></td>   
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/AEC3/music-fma-0053-n-SER-0_est.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/AEC3/music-jamendo-0002-n-SER-0_est.wav">
+                    </audio></td>    					
+            </tr>
+			<tr>
+                <td class="tg-pcvp">Speex</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/speex/music-fma-0030-n-SER-0_ideal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/speex/music-fma-0035-n-SER-0_ideal.wav">
+                    </audio></td>    
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/speex/music-fma-0053-n-SER-0_ideal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/speex/music-jamendo-0002-n-SER-0_ideal.wav">
+                    </audio></td>    					
+            </tr>
+			
+			<tr>
+                <td class="tg-pcvp">BLSTM[1]</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/blstm/music-fma-0030-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/blstm/music-fma-0035-n-SER-0_es.wav">
+                    </audio></td>   
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/blstm/music-fma-0053-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/blstm/music-jamendo-0002-n-SER-0_es.wav">
+                    </audio></td>                
+            </tr>
+			<tr>
+                <td class="tg-pcvp">CRN[2]</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn/music-fma-0030-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn/music-fma-0035-n-SER-0_es.wav">
+                    </audio></td>   
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn/music-fma-0053-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn/music-jamendo-0002-n-SER-0_es.wav">
+                    </audio></td>                
+            </tr>
+
+			<tr>
+                <td class="tg-pcvp">CRN+MTLS</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn+mtls/music-fma-0030-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn+mtls/music-fma-0035-n-SER-0_es.wav">
+                    </audio></td>   
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn+mtls/music-fma-0053-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/crn+mtls/music-jamendo-0002-n-SER-0_es.wav">
+                    </audio></td>                
+            </tr>
+			<tr>
+                <td class="tg-pcvp">ICRN-MTLS</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn-mtls/music-fma-0030-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn-mtls/music-fma-0035-n-SER-0_es.wav">
+                    </audio></td>   
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn-mtls/music-fma-0053-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn-mtls/music-jamendo-0002-n-SER-0_es.wav">
+                    </audio></td>                
+            </tr>
+			<tr>
+                <td class="tg-pcvp">Inplace-CRN</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn/music-fma-0030-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn/music-fma-0035-n-SER-0_es.wav">
+                    </audio></td>   
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn/music-fma-0053-n-SER-0_es.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source
+                            src="./samples/icrn/music-jamendo-0002-n-SER-0_es.wav">
+                    </audio></td>                
+            </tr>
+
+        </tbody>
+
+    </table>
+	    <hr style="height:1px;border:none;border-top:1px solid #555555; width:100%">
+		<tbody>
+			<tr>
+			 [1]H. Zhang and D.L. Wang, “Deep learning for acoustic echo cancellation in noisy and double-talk scenarios,” in Interspeech 2018. ISCA, pp. 3239–3243.
+			 <br/>[2]H. Zhang, K. Tan, and D.L. Wang, “Deep learning for joint acoustic echo and noise cancellation with nonlinear distortions,” in Interspeech 2019. ISCA, pp. 4255–4259.
+			 </tr>
+		</tbody>
